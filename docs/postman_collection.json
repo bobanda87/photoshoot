@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "3c26c48b-0f15-4ba9-b0c5-ac291ed369f4",
+		"name": "Photoshoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Order schedule",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dateTime\": \"2021-11-22T19:07:47.167\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/schedule/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"schedule",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order assign",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"photographerId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/assign/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"assign",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order verify",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"verified\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/verify/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"verify",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order cancel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/order/cancel/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"cancel",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order upload photos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"photosZip\": \"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HgAGgwJ/lK3Q6wAAAABJRU5ErkJggg==\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/upload/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"upload",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Boban\",\n    \"surname\": \"Davidovic\",\n    \"email\": \"boban.da87@gmail.com\",\n    \"cellNumber\": \"+4798184457\",\n    \"photoType\": \"Food\",\n    \"title\": \"McDonalds\",\n    \"logisticInfo\": \"Some logistic info\",\n    \"dateTime\": \"2021-11-22T21:07:47.167\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/order/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"order",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
